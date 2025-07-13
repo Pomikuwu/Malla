@@ -1,52 +1,35 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const botones = document.querySelectorAll("button");
-  const estado = JSON.parse(localStorage.getItem("ramosAprobados")) || {};
+// Clave única para el almacenamiento local
+const STORAGE_KEY = "progresoMallaAnimacion";
 
+document.addEventListener("DOMContentLoaded", () => {
+  const botones = document.querySelectorAll("button[data-id]");
+  const estadoGuardado = cargarProgreso();
+
+  // Restaurar botones marcados como aprobados
   botones.forEach(boton => {
     const id = boton.dataset.id;
-    if (estado[id]) {
+    if (estadoGuardado[id]) {
       boton.classList.add("aprobado");
     }
 
+    // Al hacer clic: marcar/desmarcar y guardar estado
     boton.addEventListener("click", () => {
       boton.classList.toggle("aprobado");
-      estado[id] = boton.classList.contains("aprobado");
-      localStorage.setItem("ramosAprobados", JSON.stringify(estado));
-    });
-  });
-});
-// Clave para almacenamiento local
-const STORAGE_KEY = "ramosAprobados";
-
-document.addEventListener("DOMContentLoaded", () => {
-  const botones = document.querySelectorAll("button");
-  const progreso = cargarProgreso();
-
-  // Restaurar estado guardado
-  botones.forEach(boton => {
-    const id = boton.dataset.id;
-
-    // Marcar como aprobado si estaba guardado
-    if (progreso[id]) {
-      boton.classList.add("aprobado");
-    }
-
-    // Evento de clic para cambiar estado y guardar
-    boton.addEventListener("click", () => {
-      boton.classList.toggle("aprobado");
-      progreso[id] = boton.classList.contains("aprobado");
-      guardarProgreso(progreso);
+      const aprobado = boton.classList.contains("aprobado");
+      estadoGuardado[id] = aprobado;
+      guardarProgreso(estadoGuardado);
     });
   });
 });
 
-// Función para cargar progreso desde localStorage
+// Carga el objeto desde localStorage
 function cargarProgreso() {
-  const datos = localStorage.getItem(STORAGE_KEY);
-  return datos ? JSON.parse(datos) : {};
+  const data = localStorage.getItem(STORAGE_KEY);
+  return data ? JSON.parse(data) : {};
 }
 
-// Función para guardar el progreso en localStorage
-function guardarProgreso(obj) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(obj));
+// Guarda el objeto en localStorage
+function guardarProgreso(estado) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(estado));
 }
+
