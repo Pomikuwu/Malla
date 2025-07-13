@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Interactiva - Animación</title>
+  <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+  <h1>Malla Interactiva de Animación</h1>
+  <div class="malla">
+    <!-- Agrega aquí los ramos por semestre -->
+    <!-- Primer Año -->
+    <section>
+      <h2>Primer Año - I Semestre</h2>
+      <div class="semestre">
+        <button>Taller de animación I</button>
+        <button>Dibujo y figura Humana</button>
+        <button>Introducción al modelado y animación 3D</button>
+        <button>Procesos Creativos I</button>
+        <button>Matemática</button>
+        <button>Estrategias para el aprendizaje</button>
+      </div>
+      <h2>Primer Año - II Semestre</h2>
+      <div class="semestre">
+        <button>Taller de animación II</button>
+        <button>Dibujo y movimiento</button>
+        <button>Fabricación Digital</button>
+        <button>Procesos creativos II</button>
+        <button>Industrias creativas I</button>
+      </div>
+    </section>
+
+    <!-- Segundo Año -->
+    <section>
+      <h2>Segundo Año - III Semestre</h2>
+      <div class="semestre">
+        <button>Taller de animación III</button>
+        <button>Lenmguaje y narrativa</button>
+        <button>Animación 3D</button>
+        <button>Industrias creativas II</button>
+        <button>English I</button>
+        <button>Ética</button>
+      </div>
+      <h2>Segundo Año - IV Semestre</h2>
+      <div class="semestre">
+        <button>Taller de Animación IV</button>
+        <button>Animación y Rigging</button>
+        <button>Desarrollo de Personajes y Entornos</button>
+        <button>Storyboard y Animatic</button>
+        <button>English II</button>
+        <button>Electivo de Formación Integral I</button>
+      </div>
+    </section>
+
+    <!-- Tercer Año -->
+    <section>
+      <h2>Tercer Año - V Semestre</h2>
+      <div class="semestre">
+        <button>Taller de Animación Avanzado I</button>
+        <button>Propiedad Intelectual, Industrial y Patentamiento</button>
+        <button>Iluminación y Rendering</button>
+        <button>Economía Circular, Alcances e Implicaciones</button>
+        <button>Electivo I</button>
+        <button>English III</button>
+      </div>
+      <h2>Tercer Año - VI Semestre</h2>
+      <div class="semestre">
+        <button>Taller de Animación Avanzado II</button>
+        <button>Inteligencia Aumentada para el Desarrollo de Animación y Videojuegos</button>
+        <button>Metodología de Investigación</button>
+        <button>Electivo II</button>
+        <button>Professional English I</button>
+        <button>Electivo de Formación Integral II</button>
+      </div>
+    </section>
+
+    <!-- Cuarto Año -->
+    <section>
+      <h2>Cuarto Año - VII Semestre</h2>
+      <div class="semestre">
+        <button>Taller de Animación Avanzado III</button>
+        <button>Realidad Virtual y Realidad Aumentada para Animación y Videojuegos</button>
+        <button>Desarrollo de Interfaces UX y UI</button>
+        <button>Electivo III</button>
+        <button>Professional English II</button>
+        <button>Electivo de Formación Integral III</button>
+      </div>
+      <h2>Cuarto Año - VIII Semestre</h2>
+      <div class="semestre">
+        <button>Taller de Animación Avanzado IV</button>
+        <button>Tecnologías Avanzadas para Animación y Videojuegos</button>
+        <button>Mercado y Entorno</button>
+        <button>Electivo IV</button>
+        <button>Professional English III</button>
+      </div>
+    </section>
+
+    <!-- Quinto Año -->
+    <section>
+      <h2>Quinto Año - IX Semestre</h2>
+      <div class="semestre">
+        <button>Taller de Proyectos Integrados</button>
+        <button>Electivo de Profundización I</button>
+        <button>Electivo de Profundización II</button>
+        <button>Práctica Profesional</button>
+      </div>
+      <h2>Quinto Año - X Semestre</h2>
+      <div class="semestre">
+        <button>Taller de Títulación</button>
+        <button>Electivo de Profundización III</button>
+        <button>Electivo de Formación Integral IV</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
