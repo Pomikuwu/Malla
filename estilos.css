@@ -1,52 +1,70 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fff0f5;
+  background-color: #fff4f8;
   color: #333;
-  padding: 20px;
   margin: 0;
+  padding: 20px;
 }
 
 h1 {
   text-align: center;
+  color: #cc2e74;
+  margin-bottom: 40px;
+}
+
+.contenedor-horizontal {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.año {
+  background-color: #ffe9f1;
+  border: 2px solid #f7c0d7;
+  border-radius: 16px;
+  padding: 15px;
+  min-width: 300px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.año h2 {
+  text-align: center;
   color: #d63384;
 }
 
-h2 {
-  color: #b03060;
-  margin-top: 30px;
-}
-
-.malla {
-  max-width: 1000px;
-  margin: auto;
-}
-
 .semestre {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.semestre h3 {
+  color: #c2185b;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 button {
-  background-color: #fff;
-  color: #b03060;
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
   border: 2px solid #d63384;
-  padding: 10px 15px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.3s ease;
-  flex: 1 1 300px;
+  background-color: #fff;
+  color: #c2185b;
   text-align: left;
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 button:hover {
-  background-color: #ffd6eb;
+  background-color: #ffd6e8;
 }
 
 button.aprobado {
-  background-color: #ff69b4;
+  background-color: #fbb6ce;
   color: white;
-  border-color: #ff1493;
+  border-color: #f06292;
 }
 
